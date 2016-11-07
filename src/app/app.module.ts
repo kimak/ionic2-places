@@ -9,6 +9,7 @@ import { AroundPage } from '../pages/around/around';
 import { FriendsPage } from '../pages/friends/friends';
 
 const pages = [
+  MyApp,
   HomePage,
   TabsPage,
   PlacesPage,
@@ -23,7 +24,7 @@ const pages = [
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
-  entryComponents: [MyApp],
+  entryComponents: pages,
   providers: []
 })
 export class AppModule {}
