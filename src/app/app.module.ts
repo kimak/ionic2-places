@@ -7,9 +7,10 @@ import { PlacesPage } from '../pages/places/places';
 import { AddPage } from '../pages/add/add';
 import { AroundPage } from '../pages/around/around';
 import { FriendsPage } from '../pages/friends/friends';
+import { HeaderContentComponent } from '../components/header-content/header-content';
 
-const pages = [
-  MyApp,
+const app:Array<any>=[MyApp];
+const pages:Array<any> = [
   HomePage,
   TabsPage,
   PlacesPage,
@@ -17,14 +18,17 @@ const pages = [
   AroundPage,
   FriendsPage,
 ];
+const components:Array<any> = [
+  HeaderContentComponent,
+]
 
 @NgModule({
-  declarations: pages,
+  declarations: app.concat(pages).concat(components),
   imports: [
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
-  entryComponents: pages,
+  entryComponents: app.concat(pages),
   providers: []
 })
 export class AppModule {}

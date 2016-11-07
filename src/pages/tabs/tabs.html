@@ -1,4 +1,15 @@
-<ion-tabs>
+<ion-menu [content]="content" side="right">
+  <ion-content>
+    <ion-toolbar>
+      <ion-title>Hello Ionic</ion-title>
+    </ion-toolbar>
+    <div padding>
+      Put Content sidemenu here...
+    </div>
+  </ion-content>
+</ion-menu>
+
+<ion-tabs #content>
   <ion-tab [root]="tab1Root" tabTitle="places" tabIcon="list-box"></ion-tab>
   <ion-tab [root]="tab2Root" tabTitle="add" tabIcon="add-circle"></ion-tab>
   <ion-tab [root]="tab3Root" tabTitle="around" tabIcon="map"></ion-tab>
