@@ -8,7 +8,7 @@ import { AddPage } from '../pages/add/add';
 import { AroundPage } from '../pages/around/around';
 import { FriendsPage } from '../pages/friends/friends';
 
-consts pages = [
+const pages = [
   MyApp,
   HomePage,
   TabsPage,
