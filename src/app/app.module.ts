@@ -20,12 +20,20 @@ const pages:Array<any> = [
 ];
 const components:Array<any> = [
   HeaderContentComponent,
-]
+];
+const appIonicConfig = {
+  mode: 'md',
+  platforms: {
+    ios: {
+      tabsPlacement: 'top',
+    }
+  }
+};
 
 @NgModule({
   declarations: app.concat(pages).concat(components),
   imports: [
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp,appIonicConfig)
   ],
   bootstrap: [IonicApp],
   entryComponents: app.concat(pages),

@@ -1,15 +1,18 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
-
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
-  <button ion-button (click)="goTabs()">Go Tabs</button>
-</ion-content>
+<ion-slides pager loop="true">
+  <ion-slide>
+      <img src="images/slides/slide1.jpg" />
+      <h2>Places</h2>
+      <button ion-button (click)="goTabs()">Start</button>
+  </ion-slide>
+  <ion-slide>
+      <img src="images/slides/slide2.jpg" />
+      <h2>Hybrid technology</h2>
+  </ion-slide>
+  <ion-slide>
+      <div class="home_slide3">
+      </div>
+      <div>
+        <button ion-button (click)="goTabs()">Let's go!</button>
+      </div>
+  </ion-slide>
+</ion-slides>
