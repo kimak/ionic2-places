@@ -1,15 +1,13 @@
 import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
-
-import { HomePage } from '../pages/home/home';
-
+import { Routes } from './app.routes';
 
 @Component({
-  template: `<ion-nav [root]="rootPage"></ion-nav>`
+  template: `<ion-nav [root]="rootPage"></ion-nav>`,
 })
 export class MyApp {
-  rootPage = HomePage;
+  rootPage: any;
 
   constructor(platform: Platform) {
     platform.ready().then(() => {
@@ -18,5 +16,9 @@ export class MyApp {
       StatusBar.styleDefault();
       Splashscreen.hide();
     });
+  }
+
+  ngOnInit() {
+    this.rootPage = Routes.getRootPage();
   }
 }

@@ -1,20 +1,19 @@
 import { Component } from '@angular/core';
 
-import { NavController } from 'ionic-angular';
+import { IonicApp, NavController } from 'ionic-angular';
 import { TabsPage } from '../tabs/tabs';
+import { Routes } from '../../app/app.routes';
 
 @Component({
   selector: 'page-home',
-  templateUrl: 'home.html'
+  templateUrl: 'home.html',
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController) {}
 
-  }
-
-  goTabs(){
-    this.navCtrl.push(TabsPage)
+  goLogin(){
+    this.navCtrl.push(Routes.getPage(Routes.LOGIN));
   }
 
 }
