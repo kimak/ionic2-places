@@ -14,7 +14,7 @@
 
 
 <ion-content padding>
-  <ion-list>
+  <ion-list class="login_list">
     <ion-item>
       <ion-label fixed>Username</ion-label>
       <ion-input type="text" value=""></ion-input>
@@ -25,6 +25,7 @@
       <ion-input type="password"></ion-input>
     </ion-item>
     <button full ion-button (click)="goTabs()">Go Tabs</button>
+    <button ion-button item-center outline (click)="openSignup()">Sign up</button>
 
   </ion-list>
 </ion-content>

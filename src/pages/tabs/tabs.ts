@@ -4,6 +4,7 @@ import { PlacesPage } from '../places/places';
 import { AddPage } from '../add/add';
 import { AroundPage } from '../around/around';
 import { FriendsPage } from '../friends/friends';
+import { Routes } from '../../app/app.routes';
 
 /*
   Generated class for the Tabs tabs.
@@ -22,8 +23,10 @@ export class TabsPage {
   tab3Root: any = AroundPage;
   tab4Root: any = FriendsPage;
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController) {}
 
+  logout(){
+    this.navCtrl.setRoot(Routes.getRootPage());
   }
 
 }
