@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 
-import { IonicApp, NavController } from 'ionic-angular';
-import { TabsPage } from '../tabs/tabs';
+import { NavController } from 'ionic-angular';
 import { Routes } from '../../app/app.routes';
 
 @Component({
