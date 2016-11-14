@@ -8,6 +8,9 @@ import { Routes } from '../../app/app.routes';
   templateUrl: 'home.html',
 })
 export class HomePage {
+  slidesOptions:Object={
+    pager:true,
+  };
 
   constructor(public navCtrl: NavController) {}
 
