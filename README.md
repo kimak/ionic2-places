@@ -18,3 +18,4 @@ $ ionic emulate ios
 ### Slides:
 
 DAY 1 - [pdf](slides/ionic-day-1.pdf)
+DAY 2 - [pdf](slides/ionic-day-2.pdf)
