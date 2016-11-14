@@ -23,15 +23,18 @@
 
     <ion-item>
       <ion-label floating>Email</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-input type="text" [(ngModel)]="email"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label floating>Password</ion-label>
-      <ion-input type="password"></ion-input>
+      <ion-input type="password" [(ngModel)]="password"></ion-input>
+    </ion-item>
+    <ion-item *ngIf="error" class="signup_error">
+      {{error}}
     </ion-item>
     <div padding>
-      <button ion-button full>Sign Up</button>
+      <button ion-button full (click)="signup()">Sign Up</button>
     </div>
 
   </ion-list>
