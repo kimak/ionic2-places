@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Headers } from '@angular/http';
 import { Storage } from '@ionic/storage';
-import {JwtHelper, tokenNotExpired, AuthHttp} from 'angular2-jwt';
+import {JwtHelper, AuthHttp} from 'angular2-jwt';
 import {Endpoints} from './endpoints';
 import 'rxjs/add/operator/toPromise';
 import 'rxjs/add/operator/map';
@@ -61,10 +61,5 @@ export class Auth {
     this.local.remove('id_token');
     this.user = null;
   }
-
-  authenticated() {
-   return tokenNotExpired();
- }
-
 
 }
