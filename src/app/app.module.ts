@@ -8,11 +8,13 @@ import { Http } from '@angular/http';
 import { Storage } from '@ionic/storage';
 import {Endpoints} from '../providers/endpoints'
 import {Auth} from '../providers/auth'
+import {Map} from '../components/map/map';
 
 const app:Array<any>=[MyApp];
 const pages:Array<any> = Routes.getPages();
 const components:Array<any> = [
   HeaderContentComponent,
+  Map,
 ];
 const appIonicConfig = {
   mode: 'md',
