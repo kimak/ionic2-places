@@ -8,6 +8,9 @@ import { TabsPage } from '../tabs/tabs';
   templateUrl: 'home.html'
 })
 export class HomePage {
+  slidesOptions:Object={
+    pager:true,
+  };
 
   constructor(public navCtrl: NavController) {
 
