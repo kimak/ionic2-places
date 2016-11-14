@@ -8,6 +8,9 @@ import {Auth} from '../../providers/auth';
   templateUrl: 'home.html',
 })
 export class HomePage {
+  slidesOptions:Object={
+    pager:true,
+  };
 
   constructor(public navCtrl: NavController, private auth:Auth) {
     if(!this.auth.isInit){
