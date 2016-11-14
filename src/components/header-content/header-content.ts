@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, EventEmitter, Output } from '@angular/core';
 
 /*
   Generated class for the HeaderContent component.
@@ -13,8 +13,20 @@ import { Component, Input } from '@angular/core';
 export class HeaderContentComponent {
 
   @Input() title: string;
+  @Input() backEnabled: Boolean;
+  showBack:Boolean;
+
+  @Output() onBack: EventEmitter<any> = new EventEmitter();
 
   constructor() {
+  }
+
+  ngOnInit() {
+      this.showBack = this.backEnabled;
+  }
+
+  onClickBack(){
+    this.onBack.emit({})
   }
 
 }

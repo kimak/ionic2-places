@@ -6,6 +6,7 @@ import {FriendsPage} from '../pages/friends/friends';
 import {AroundPage} from '../pages/around/around';
 import {PlacesPage} from '../pages/places/places';
 import {SignupPage} from '../pages/signup/signup';
+import {PlacePage} from '../pages/place/place';
 
 export class Routes {
 
@@ -17,6 +18,7 @@ export class Routes {
   static AROUND:string="around";
   static FRIENDS:string="friends";
   static SIGNUP:string="signup";
+  static PLACE:string="place";
 
   static pages = {
     [Routes.LOGIN]: LoginPage,
@@ -27,6 +29,7 @@ export class Routes {
     [Routes.AROUND]: AroundPage,
     [Routes.FRIENDS]: FriendsPage,
     [Routes.SIGNUP]: SignupPage,
+    [Routes.PLACE]: PlacePage,
   };
 
   static getPage(id){

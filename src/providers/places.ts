@@ -31,4 +31,12 @@ export class Places {
         });
     });
   }
+
+  getPlaceById(id){
+    let selected = null
+    this.data.map((place)=>{
+        if(place.id==id) selected = place; return selected;
+    })
+    return selected
+  }
 }

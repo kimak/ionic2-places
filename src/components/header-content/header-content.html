@@ -5,6 +5,11 @@
   for more info on Angular 2 Components.
 -->
 <ion-toolbar>
+  <ion-buttons left *ngIf="showBack">
+     <button ion-button (click)="onClickBack()">
+       <ion-icon name='arrow-back'></ion-icon>
+     </button>
+  </ion-buttons>
   <ion-title>{{title}}</ion-title>
   <ion-buttons end>
       <button ion-button menuToggle>

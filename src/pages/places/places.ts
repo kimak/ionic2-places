@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import {Places} from '../../providers/places';
+import { Routes } from '../../app/app.routes';
 
 /*
   Generated class for the Places page.
@@ -19,6 +20,10 @@ export class PlacesPage {
       this.places.load().then((data)=>{
         this.items = data;
       })
+  }
+
+  selectItem(id){
+    this.nav.push(Routes.getPage(Routes.PLACE),{id:id})
   }
 
 }
