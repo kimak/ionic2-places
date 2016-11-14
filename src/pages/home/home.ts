@@ -15,8 +15,8 @@ export class HomePage {
   constructor(public navCtrl: NavController, private auth:Auth) {
     if(!this.auth.isInit){
       this.auth.init()
-        .then(()=>{
-          this.navCtrl.setRoot(Routes.getRootPage(true));
+        .then((token)=>{
+          this.navCtrl.setRoot(Routes.getRootPage(token!=null));
         });
     };
   }

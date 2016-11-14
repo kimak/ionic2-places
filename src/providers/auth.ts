@@ -22,6 +22,7 @@ export class Auth {
     this.isInit = true;
     return this.local.get('id_token').then(token => {
       this.setUser(token);
+      return token;
     }).catch(error => {
       console.log(error);
     });
