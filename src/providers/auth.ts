@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { NavController } from 'ionic-angular';
 import { Headers } from '@angular/http';
 import { Storage } from '@ionic/storage';
 import {JwtHelper, tokenNotExpired, AuthHttp} from 'angular2-jwt';
