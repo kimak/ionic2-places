@@ -3,11 +3,9 @@ import { Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 import { Routes } from './app.routes';
 import {Auth} from '../providers/auth';
-import {Places} from '../providers/places';
 
 @Component({
   template: `<ion-nav [root]="rootPage"></ion-nav>`,
-  providers: [Places],
 })
 export class MyApp {
   rootPage: any;
