@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-
+import {Camera} from 'ionic-native';
 /*
   Generated class for the Add page.
 
@@ -13,10 +13,20 @@ import { NavController } from 'ionic-angular';
 })
 export class AddPage {
 
+  public base64Image: string;
+
   constructor(public navCtrl: NavController) {}
 
-  ionViewDidLoad() {
-    console.log('Hello AddPage Page');
+  getPicture(){
+    Camera.getPicture({
+      destinationType: Camera.DestinationType.DATA_URL,
+      targetWidth: 200,
+      targetHeight: 200
+    }).then((imageData) => {
+      this.base64Image = "data:image/jpeg;base64," + imageData;
+    }, (error) => {
+      console.log("error ",error)
+    });
   }
 
 }

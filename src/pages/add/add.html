@@ -12,5 +12,26 @@
 
 
 <ion-content padding>
+  <ion-list>
 
+    <ion-item>
+      <ion-label stacked>Name</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Description</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <button ion-button icon-left color="dark" round full (click)="getPicture()">
+      <ion-icon name='camera' is-active="false"></ion-icon>
+      <span>Take picture</span>
+    </button>
+
+    <ion-card>
+     <img [src]="base64Image" *ngIf="base64Image" />
+   </ion-card>
+
+  </ion-list>
 </ion-content>
