@@ -21,4 +21,6 @@ DAY 1 - [pdf](slides/ionic-day-1.pdf)
 
 DAY 2 - [pdf](slides/ionic-day-2.pdf)
 
+DAY 3 - [pdf](slides/ionic-day-3.pdf)
+
 GIT BONUS - [pdf](slides/#1-bonus_git.pdf)
