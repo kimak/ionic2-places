@@ -10,7 +10,8 @@ import {Places} from '../../providers/places';
 */
 @Component({
   selector: 'page-places',
-  templateUrl: 'places.html'
+  templateUrl: 'places.html',
+  providers: [Places],
 })
 export class PlacesPage {
 
