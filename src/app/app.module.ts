@@ -10,6 +10,7 @@ import {Endpoints} from '../providers/endpoints'
 import {Auth} from '../providers/auth'
 import {Map} from '../components/map/map';
 import {SortAsc} from '../pipes/sort-asc';
+import {GroupBy} from '../pipes/group-by';
 
 const app:Array<any>=[MyApp];
 const pages:Array<any> = Routes.getPages();
@@ -17,7 +18,7 @@ const components:Array<any> = [
   HeaderContentComponent,
   Map,
 ];
-const pipes:Array<any> = [SortAsc];
+const pipes:Array<any> = [SortAsc, GroupBy];
 const appIonicConfig = {
   mode: 'md',
   platforms: {

@@ -28,7 +28,6 @@ export class FriendsPage {
           });
         },1000)*/
 
-
         Contacts.find(['*']).then((contacts) => {
           contacts.forEach( (c)=> {
             if (c.name.givenName && c.phoneNumbers) {
