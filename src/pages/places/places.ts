@@ -12,7 +12,6 @@ import { Routes } from '../../app/app.routes';
 @Component({
   selector: 'page-places',
   templateUrl: 'places.html',
-  providers: [Places],
 })
 export class PlacesPage {
 
