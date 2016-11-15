@@ -9,6 +9,7 @@ import { Storage } from '@ionic/storage';
 import {Endpoints} from '../providers/endpoints'
 import {Auth} from '../providers/auth'
 import {Map} from '../components/map/map';
+import {SortAsc} from '../pipes/sort-asc';
 
 const app:Array<any>=[MyApp];
 const pages:Array<any> = Routes.getPages();
@@ -16,6 +17,7 @@ const components:Array<any> = [
   HeaderContentComponent,
   Map,
 ];
+const pipes:Array<any> = [SortAsc];
 const appIonicConfig = {
   mode: 'md',
   platforms: {
@@ -37,7 +39,7 @@ export function getAuthHttp(http) {
 }
 
 @NgModule({
-  declarations: app.concat(pages).concat(components),
+  declarations: app.concat(pages).concat(components).concat(pipes),
   imports: [
     IonicModule.forRoot(MyApp,appIonicConfig, Routes.getDeepLinkerConfig())
   ],
